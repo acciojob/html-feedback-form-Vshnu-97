@@ -1,16 +1,34 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+	<main class="container">
+		<header><h1>Feedback Form</h1></header>
+		<!-- method get using when data is not crucial or unsecure it use in url when data is private then use post   -->
+		<form action="#" method="post">
+			<label for="name">Name</label>
+			<input type="text" name="username" maxlength="50" minlength="3" id="name"><br><br>
+			<label for="portfolio">Portfolio</label>
+			<input type="url" name="portfolio" id="portfolio"><br><br>
+			<label for="favColor">Favourite Colour</label>
+			<input type="color" id="favColor"><br><br>
+
+			<label for="rating">How much like the colour</label>
+			<input type="range" min="1" max="100" value="10" id="likeness"><br><br>
+			<label for="likeness">How much like the colour</label>
+			<input type="range" min="1" max="100" id="likeness"><br><br>
+
+			<input type="submit" value="Submit">
+			<button type="submit">Submit</button><br>
+			<button type="reset">Reset</button>
+
+
+		</form>
+	</main>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-
 </body>
-
 </html>
